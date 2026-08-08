@@ -1,3 +1,6 @@
+/// <summary>
+/// State alur battle turn-based, dipakai oleh BattleManager.
+/// </summary>
 public enum BattleState
 {
     Start,

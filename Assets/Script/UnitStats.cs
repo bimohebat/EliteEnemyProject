@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/// <summary>
+/// Menyimpan data dasar (base stats) sebuah unit — baik player maupun enemy.
+/// Dibuat sebagai ScriptableObject supaya bisa di-tweak lewat Inspector
+/// tanpa perlu mengubah kode, dan bisa direuse antar battle.
+/// </summary>
 [CreateAssetMenu(fileName = "NewUnitStats", menuName = "Battle/UnitStats")]
 public class UnitStats : ScriptableObject
 {
@@ -16,6 +21,5 @@ public class UnitStats : ScriptableObject
     public int agility = 10;   // memengaruhi peluang escape & dodge
     public int luck = 5;       // memengaruhi peluang critical hit
 
-    [Header("Battle Config")]
-    public bool canBeEscapedFrom = true; // false untuk boss battle
-}
+   [Header("Enemy Config (hanya relevan jika unit ini musuh)")]
+    public EnemyType enemyType = EnemyType.Common; // menentukan escape chance: Common/Elite bisa, Boss tidak bis

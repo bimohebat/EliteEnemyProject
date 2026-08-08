@@ -1,6 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Representasi unit SAAT battle berlangsung (runtime state).
+/// UnitStats tidak boleh dimodifikasi langsung karena itu asset yang dishare,
+/// jadi semua nilai yang berubah selama battle (HP, MP, buff/debuff) disimpan di sini.
+/// </summary>
 public class BattleUnit
 {
     public UnitStats baseStats;

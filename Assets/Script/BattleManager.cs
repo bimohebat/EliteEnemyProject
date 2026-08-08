@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// "Wasit" utama yang mengatur seluruh alur battle turn-based:
+/// turn order -> player action -> resolve -> enemy action -> resolve -> cek menang/kalah.
+/// Menggabungkan: UnitStats, BattleUnit, BattleCalculator, EscapeSystem.
+/// </summary>
+
 public class BattleManager : MonoBehaviour
 {
     [Header("Setup Battle (isi lewat Inspector)")]
@@ -169,27 +175,33 @@ public class BattleManager : MonoBehaviour
     public void PlayerEscape()
     {
         if (currentState != BattleState.PlayerTurn) return;
-
+ 
         var aliveEnemies = enemyUnits.Where(e => !e.isDead).ToList();
-        EscapeSystem.EscapeResult result = EscapeSystem.TryEscape(activeUnit, aliveEnemies);
-
+ 
+        // Hitung chance sekali saja, supaya nilai yang di-log/ditampilkan ke UI
+        // sama persis dengan nilai yang dipakai untuk roll di bawah.
+        float chance = EscapeSystem.GetEscapeChance(aliveEnemies);
+        Debug.Log($"[Battle] Mencoba escape... (chance: {chance:P0})");
+ 
+        EscapeSystem.EscapeResult result = EscapeSystem.RollEscape(aliveEnemies, chance);
+ 
         switch (result)
         {
             case EscapeSystem.EscapeResult.Success:
                 ChangeState(BattleState.BattleEscaped);
                 break;
-
+ 
             case EscapeSystem.EscapeResult.Failed:
                 Debug.Log("[Battle] Gagal kabur! Giliran hangus.");
                 EndPlayerAction();
                 break;
-
+ 
             case EscapeSystem.EscapeResult.Blocked:
                 Debug.Log("[Battle] Battle ini tidak bisa di-escape!");
                 break; // tidak menghabiskan giliran, biarkan player pilih aksi lain
         }
     }
-
+    
     void EndPlayerAction()
     {
         if (CheckBattleEnd()) return;
