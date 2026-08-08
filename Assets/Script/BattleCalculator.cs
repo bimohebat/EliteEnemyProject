@@ -2,6 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Berisi semua rumus perhitungan battle: damage, critical hit, dan turn order.
+/// Static class supaya bisa dipanggil dari mana saja tanpa perlu instance.
+/// </summary>
+
 public static class BattleCalculator
 {
     [Header("Tuning values - sesuaikan dengan game balance kamu")]
