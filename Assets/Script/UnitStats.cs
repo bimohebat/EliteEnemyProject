@@ -22,4 +22,8 @@ public class UnitStats : ScriptableObject
     public int luck = 5;       // memengaruhi peluang critical hit
 
    [Header("Enemy Config (hanya relevan jika unit ini musuh)")]
-    public EnemyType enemyType = EnemyType.Common; // menentukan escape chance: Common/Elite bisa, Boss tidak bis
+public EnemyType enemyType = EnemyType.Common; // menentukan escape chance: Common/Elite bisa, Boss tidak bisa
+
+}
+
+   //public EnemyType enemyType = EnemyType.Common; // menentukan escape chance: Common/Elite bisa, Boss tidak bis
