@@ -17,6 +17,9 @@ public class BattleManager : MonoBehaviour
     [Header("Konfigurasi Attack")]
     public int heavyAttackManaCost = 10; // MP yang dikonsumsi Heavy Attack
 
+    [Header("UI Attack")]
+    public GameObject attackUI;
+
     // Tipe attack yang sedang dipilih player dari submenu Attack (Basic/Heavy/Charged),
     // dipakai saat player mengklik GameObject musuh di scene sebagai target.
     private AttackType pendingAttackType = AttackType.Basic;
@@ -190,6 +193,34 @@ public class BattleManager : MonoBehaviour
     // ---------------------------------------------------------
     // SUBMENU ATTACK — panggil dari 3 tombol tipe attack (Basic/Heavy/Charged)
     // ---------------------------------------------------------
+
+    /// <summary>
+    /// Membuka UI Attack.
+    /// Dipanggil oleh tombol Attack utama.
+    /// </summary>
+    public void OpenAttackUI()
+    {
+        if (attackUI != null)
+        {
+            attackUI.SetActive(true);
+        }
+    }
+
+    /// <summary>
+    /// Menutup UI Attack.
+    /// Dipanggil oleh tombol Close pada UI Attack.
+    /// </summary>
+    public void CloseAttackUI()
+    {
+        if (attackUI != null)
+        {
+            attackUI.SetActive(false);
+        }
+
+        pendingAttackType = AttackType.Basic;
+
+        Debug.Log("[Battle] Attack UI ditutup.");
+    }
 
     /// <summary>
     /// Dipanggil saat player menekan tombol "Basic Attack" di submenu Attack.
