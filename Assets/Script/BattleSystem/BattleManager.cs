@@ -207,16 +207,26 @@ public class BattleManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Menutup UI Attack.
-    /// Dipanggil oleh tombol Close pada UI Attack.
+    /// Hanya menyembunyikan panel attackUI, TANPA mereset pendingAttackType.
+    /// Dipakai internal setelah player MEMILIH tipe attack (Basic/Heavy/Charged),
+    /// supaya panel tidak menghalangi tap ke musuh, tapi pilihan tipe tetap tersimpan.
     /// </summary>
-    public void CloseAttackUI()
+    void HideAttackPanel()
     {
         if (attackUI != null)
         {
             attackUI.SetActive(false);
         }
+    }
 
+    /// <summary>
+    /// Menutup UI Attack DAN membatalkan pilihan tipe attack (kembali ke Basic).
+    /// Dipanggil oleh tombol Close/Cancel pada UI Attack -- yaitu saat player
+    /// BATAL memilih attack sama sekali, bukan setelah memilih salah satu tipe.
+    /// </summary>
+    public void CloseAttackUI()
+    {
+        HideAttackPanel();
         pendingAttackType = AttackType.Basic;
 
         Debug.Log("[Battle] Attack UI ditutup.");
@@ -230,18 +240,21 @@ public class BattleManager : MonoBehaviour
     public void SelectBasicAttackType()
     {
         pendingAttackType = AttackType.Basic;
+        HideAttackPanel(); // sembunyikan panel saja, tidak reset pilihan tipe
         Debug.Log("[Battle] Pilih target untuk Basic Attack (klik musuh di scene).");
     }
 
     public void SelectHeavyAttackType()
     {
         pendingAttackType = AttackType.Heavy;
+        HideAttackPanel();
         Debug.Log($"[Battle] Pilih target untuk Heavy Attack (butuh {heavyAttackManaCost} MP).");
     }
 
     public void SelectChargedAttackType()
     {
         pendingAttackType = AttackType.Charged;
+        HideAttackPanel();
         Debug.Log("[Battle] Pilih target untuk Charged Attack (akan meledak giliran berikutnya).");
     }
 
