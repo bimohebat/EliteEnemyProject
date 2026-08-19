@@ -24,12 +24,20 @@ public class BattleManager : MonoBehaviour
     // dipakai saat player mengklik GameObject musuh di scene sebagai target.
     private AttackType pendingAttackType = AttackType.Basic;
 
+    [Header("Konfigurasi Turn Order (Random per-Pihak)")]
+    [Tooltip("Maksimal berapa kali giliran boleh menumpuk berturut-turut untuk pihak yang sama.")]
+    public int maxConsecutiveTurnsPerSide = 2;
+
     [Header("Runtime State (read-only, untuk debug)")]
     public BattleState currentState;
     public List<BattleUnit> playerUnits = new List<BattleUnit>();
     public List<BattleUnit> enemyUnits = new List<BattleUnit>();
-    private List<BattleUnit> turnQueue = new List<BattleUnit>();
     private BattleUnit activeUnit;
+
+    // Tracking untuk cap turn stacking: sisi mana yang barusan jalan, dan sudah
+    // berapa kali berturut-turut sisi itu yang dapat giliran.
+    private BattleSide? lastSide = null;
+    private int consecutiveSideTurns = 0;
 
     void Start()
     {
@@ -104,46 +112,46 @@ public class BattleManager : MonoBehaviour
         Debug.Log("[Battle] Battle dimulai!");
         yield return new WaitForSeconds(1f); // jeda untuk animasi intro battle, opsional
 
-        BuildTurnQueue();
         NextTurn();
     }
 
     // ---------------------------------------------------------
-    // TURN ORDER (pakai BattleCalculator)
+    // TURN ORDER — RANDOM PER-PIHAK dengan cap stacking
     // ---------------------------------------------------------
-    void BuildTurnQueue()
-    {
-        List<BattleUnit> allUnits = new List<BattleUnit>();
-        allUnits.AddRange(playerUnits);
-        allUnits.AddRange(enemyUnits);
-
-        turnQueue = BattleCalculator.GetTurnOrder(allUnits);
-    }
+    // Giliran TIDAK lagi berbasis antrian speed tetap (player -> enemy -> player).
+    // Sebaliknya, tiap giliran, sistem mengundi PIHAK mana (Player/Enemy) yang
+    // jalan berikutnya. Satu pihak BISA dapat giliran berturut-turut (misal
+    // Player -> Player -> Enemy -> Player), tapi dibatasi oleh
+    // 'maxConsecutiveTurnsPerSide' (default 2) supaya tidak ada pihak yang
+    // menumpuk giliran tanpa batas.
 
     void NextTurn()
     {
         // Cek kondisi menang/kalah dulu sebelum lanjut turn berikutnya
         if (CheckBattleEnd()) return;
 
-        if (turnQueue.Count == 0)
-        {
-            BuildTurnQueue(); // round baru, susun ulang urutan giliran
-        }
+        BattleSide nextSide = DecideNextSide();
 
-        activeUnit = turnQueue[0];
-        turnQueue.RemoveAt(0);
+        // Update counter stacking: kalau pihak yang sama dengan giliran
+        // sebelumnya, tambah hitungan; kalau beda, reset ke 1.
+        consecutiveSideTurns = (lastSide == nextSide) ? consecutiveSideTurns + 1 : 1;
+        lastSide = nextSide;
 
-        if (activeUnit.isDead)
+        activeUnit = PickActingUnit(nextSide);
+
+        if (activeUnit == null)
         {
-            NextTurn(); // skip unit yang sudah mati
+            // Seharusnya tidak terjadi kalau CheckBattleEnd() benar, tapi dijaga
+            // supaya tidak infinite loop kalau ada edge-case aneh.
+            Debug.LogWarning("[Battle] Tidak ada unit hidup di pihak yang terpilih, coba ulang.");
             return;
         }
 
         activeUnit.isDefending = false; // reset status defend di awal giliran unit ini
 
-        // Kalau unit ini sedang "charging" (habis pilih Charged Attack giliran lalu),
-        // giliran ini otomatis dipakai untuk melepaskan serangan -- player tidak
-        // perlu (dan tidak bisa) memilih aksi lain lagi.
+        // Kalau unit yang terpilih sedang "charging" (habis pilih Charged Attack
+        // giliran lalu), giliran ini otomatis dipakai untuk melepaskan serangan --
+        // player tidak perlu (dan tidak bisa) memilih aksi lain lagi.
         if (activeUnit.isCharging)
         {
             ResolveChargedAttack();
@@ -151,6 +159,55 @@ public class BattleManager : MonoBehaviour
         }
 
         ChangeState(activeUnit.isPlayerSide ? BattleState.PlayerTurn : BattleState.EnemyTurn);
+    }
+
+    /// <summary>
+    /// Mengundi pihak mana yang jalan berikutnya. Kalau pihak yang sama sudah
+    /// menumpuk sampai batas (maxConsecutiveTurnsPerSide), pihak lain DIPAKSA
+    /// jalan (asal masih ada unit hidup di sana).
+    /// </summary>
+    BattleSide DecideNextSide()
+    {
+        bool playerAlive = playerUnits.Any(u => !u.isDead);
+        bool enemyAlive = enemyUnits.Any(u => !u.isDead);
+
+        // Cap tercapai -> paksa ganti ke pihak sebaliknya (kalau masih ada yang hidup di sana)
+        if (lastSide.HasValue && consecutiveSideTurns >= maxConsecutiveTurnsPerSide)
+        {
+            BattleSide forcedSide = lastSide.Value == BattleSide.Player ? BattleSide.Enemy : BattleSide.Player;
+            bool forcedSideAlive = forcedSide == BattleSide.Player ? playerAlive : enemyAlive;
+            if (forcedSideAlive) return forcedSide;
+            // Kalau pihak lawan sudah habis semua, biarkan lanjut ke pengundian
+            // biasa di bawah (praktiknya CheckBattleEnd sudah menghentikan battle
+            // sebelum sampai sini, jadi ini murni jaring pengaman).
+        }
+
+        // Pengundian biasa, hanya di antara pihak yang masih punya unit hidup
+        List<BattleSide> options = new List<BattleSide>();
+        if (playerAlive) options.Add(BattleSide.Player);
+        if (enemyAlive) options.Add(BattleSide.Enemy);
+
+        return options[Random.Range(0, options.Count)];
+    }
+
+    /// <summary>
+    /// Pilih unit yang akan bertindak dari pihak yang terpilih.
+    /// Unit yang sedang "charging" SELALU diprioritaskan (supaya Charged Attack
+    /// pasti meledak begitu pihaknya dapat giliran lagi, tidak keundur-undur
+    /// oleh unit lain di pihak yang sama). Kalau tidak ada yang charging,
+    /// pilih acak dari unit hidup di pihak itu.
+    /// </summary>
+    BattleUnit PickActingUnit(BattleSide side)
+    {
+        List<BattleUnit> sideUnits = side == BattleSide.Player ? playerUnits : enemyUnits;
+
+        var charging = sideUnits.FirstOrDefault(u => !u.isDead && u.isCharging);
+        if (charging != null) return charging;
+
+        var alive = sideUnits.Where(u => !u.isDead).ToList();
+        if (alive.Count == 0) return null;
+
+        return alive[Random.Range(0, alive.Count)];
     }
 
     /// <summary>
