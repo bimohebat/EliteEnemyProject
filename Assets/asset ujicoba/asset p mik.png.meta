@@ -1,0 +1,1628 @@
+fileFormatVersion: 2
+guid: 89dfbfb624d1b0947b36710430249d3b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: asset p mik_18
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 699
+        width: 104
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc4651300ba32a4193418f6f33fc8b3
+      internalID: -1932553773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_26
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 713
+        width: 84
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9ce2491787c48439be35580edbd55d
+      internalID: -253099129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_27
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 713
+        width: 110
+        height: 157
+      alignment: 9
+      pivot: {x: 0.53342295, y: 0.5501337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d573fc93182114f88007d8cba9b65c
+      internalID: -581255011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_29
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 709
+        width: 85
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a634de05b0d097d48afb995a8215d234
+      internalID: -1891396111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_31
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 711
+        width: 94
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c509b9da347b1c4e8f3e38380162bb1
+      internalID: 1544350665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_32
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 712
+        width: 102
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d8a1e16ad838647bd3f4aa05b58b69
+      internalID: 944892292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_34
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 708
+        width: 91
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266b0a3f3faf93047a786c704364ee7a
+      internalID: 1352682526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_39
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 665
+        width: 97
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ea3dbe8137c8e4cbca52b259aee0ce
+      internalID: -1798995710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_41
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 672
+        width: 109
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dffe11db855b343bbcc7f94e6ca4e6
+      internalID: 825086412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_45
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 700
+        width: 107
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656cf24de2e8e2f40ba3db779f6a2e00
+      internalID: -710194439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_47
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 673
+        width: 89
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093e1f29ec4e76a4ab05a7381c220098
+      internalID: 275797069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_74
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 658
+        width: 120
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1606839bda564f43afc8151dd3fae43
+      internalID: 1990716675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_104
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 529
+        width: 89
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd02a59e282bc6449278b317034ded1
+      internalID: -374868242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_106
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 528
+        width: 88
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3848b5e57723bfc4d9aec88d48c077eb
+      internalID: 244912429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_107
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 527
+        width: 82
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1137aabce6976774c84345814dcdfd15
+      internalID: -1628845173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_109
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 530
+        width: 74
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4846867882c22b24491216079933d8cf
+      internalID: -1708522111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_110
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 531
+        width: 86
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d6c0dcdcfddb444bd19493fc2a2c44
+      internalID: -910475941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_112
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 527
+        width: 84
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b841f1b49cd82fe45a7db39b5b19cf8a
+      internalID: 1634707994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_113
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 528
+        width: 89
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1410efdfa1bc31949850885153314c25
+      internalID: -1285405873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_115
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 530
+        width: 92
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcacc31363093a449fc65bb9b9413a9
+      internalID: -1451826647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_144
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 480
+        width: 93
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5dddebcbbd778408234cee86f04138
+      internalID: 1197759718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_146
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 481
+        width: 119
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445aba1905a1989418ff2808dac5dc0d
+      internalID: 1571325820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_149
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 470
+        width: 150
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8367b0e2b677147909960ca45fb36c
+      internalID: -845720419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_151
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 452
+        width: 149
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7254ddee2d02a0b4ead27af4f01cbbf6
+      internalID: 77662960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_180
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 439
+        width: 157
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159aee5978dd2504280e4a0ba29c5972
+      internalID: 2125224122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_182
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 363
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058e16a4aef988447afdb43771653f50
+      internalID: 1576677254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_184
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 361
+        width: 94
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9235fd09577cd48979987e318b0f31
+      internalID: 1433609845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_186
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 355
+        width: 88
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa99f9d0db2d034b8168a938484ccad
+      internalID: -156546778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_187
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 357
+        width: 101
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65a5f4fc9b3ca04a9e655847c3c0d16
+      internalID: 1455480110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_189
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 354
+        width: 113
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e606eb0e4abfb6840b63572f024c868d
+      internalID: 990716370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_191
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 356
+        width: 107
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0294fb800995d41a19099a2d8fa870
+      internalID: 571909994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_193
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 368
+        width: 114
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd9ac5f0f4e30b4280165a0dfe58899
+      internalID: -2086203928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_194
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 361
+        width: 116
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1c5683e6c5a984c9e65522c733a184
+      internalID: 1309683974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_251
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 193
+        width: 170
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a61780d3b65164a8aaf3a7424eb49c
+      internalID: 1690069542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_260
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 196
+        width: 185
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3222a7830d2f3488e54a8f49f227e9
+      internalID: -539846760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_263
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 194
+        width: 178
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a9a27e7b1428743a776affdd6a0bfc
+      internalID: -1577104495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_266
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 195
+        width: 190
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cf118e4f48dc048b01bb9d92047f47
+      internalID: 1825030763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_273
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 192
+        width: 191
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c65a3350d74a294abe0f6bb4aba5c0a
+      internalID: -1403652760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_278
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 196
+        width: 192
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25471cce391b4944855d65d5192b931
+      internalID: 1257984989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_281
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 196
+        width: 127
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f8eb587f7c07c44a60c4ecd634c0a5
+      internalID: -541971099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_284
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 194
+        width: 170
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272d627724ffc3b4fb921bfdf530086a
+      internalID: 1777621940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_295
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 191
+        width: 204
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0a28937dab3c042b0ce361c1157068
+      internalID: 1302992417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_338
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 17
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7da78bc38d3ce4aa0937455356b46b
+      internalID: 1790558564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_340
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 19
+        width: 134
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cc604c7cf804644a4bbad0aaa029ac
+      internalID: -1502775269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_342
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 20
+        width: 115
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7749f673206eb0a4ebbd400cf0355498
+      internalID: -1629323072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_345
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 20
+        width: 130
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4772965aa87fe434f80f12427e2696eb
+      internalID: -1293116638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_347
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 20
+        width: 149
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a426421906f684aaa514f5f7257fd4
+      internalID: 736522820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_350
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 27
+        width: 160
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dab3bcdb0e50d245b57bb87d3048250
+      internalID: 440673759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_353
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 24
+        width: 177
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f77db7c4ae2ad47b66bd7d3848770c
+      internalID: -980423932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_356
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 19
+        width: 183
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f068ee5efb7ba964ba782ea6ba91b0df
+      internalID: 356119312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_358
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 20
+        width: 135
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1d5a5f899281f4891bdfbb4e6bbf1c
+      internalID: -865691848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset p mik_362
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 18
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6485f60494437414fab92894eb8652ef
+      internalID: 478792474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0c3b0b6048b495343b87dd2b580b895f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
+    nameFileIdTable:
+      asset p mik_0: -722666091
+      asset p mik_1: -195106408
+      asset p mik_10: -1070939460
+      asset p mik_100: -2097365124
+      asset p mik_101: 2014952042
+      asset p mik_102: -1825332299
+      asset p mik_103: -1748460724
+      asset p mik_104: -374868242
+      asset p mik_105: -528744576
+      asset p mik_106: 244912429
+      asset p mik_107: -1628845173
+      asset p mik_108: -1993750093
+      asset p mik_109: -1708522111
+      asset p mik_11: 130928439
+      asset p mik_110: -910475941
+      asset p mik_111: 392474687
+      asset p mik_112: 1634707994
+      asset p mik_113: -1285405873
+      asset p mik_114: -1449901361
+      asset p mik_115: -1451826647
+      asset p mik_116: 1942165190
+      asset p mik_117: 2089825151
+      asset p mik_118: -1213084610
+      asset p mik_119: -915145645
+      asset p mik_12: -640372660
+      asset p mik_120: 494222339
+      asset p mik_121: 819240872
+      asset p mik_122: 727084379
+      asset p mik_123: -595243665
+      asset p mik_124: 1083367068
+      asset p mik_125: -1785445147
+      asset p mik_126: 2124319176
+      asset p mik_127: -141533738
+      asset p mik_128: -1478300050
+      asset p mik_129: 1162873554
+      asset p mik_13: -1322920036
+      asset p mik_130: 718297281
+      asset p mik_131: 949308801
+      asset p mik_132: -1446116049
+      asset p mik_133: -2054208706
+      asset p mik_134: -396940878
+      asset p mik_135: -1166655359
+      asset p mik_136: -1306659390
+      asset p mik_137: -460623694
+      asset p mik_138: -574754127
+      asset p mik_139: -1665642725
+      asset p mik_14: -474799075
+      asset p mik_140: 245508941
+      asset p mik_141: 348069592
+      asset p mik_142: 578525906
+      asset p mik_143: -762217565
+      asset p mik_144: 1197759718
+      asset p mik_145: 1267995275
+      asset p mik_146: 1571325820
+      asset p mik_147: 128810056
+      asset p mik_148: 2118331365
+      asset p mik_149: -845720419
+      asset p mik_15: 369005417
+      asset p mik_150: -96868286
+      asset p mik_151: 77662960
+      asset p mik_152: -2064598341
+      asset p mik_153: 805676864
+      asset p mik_154: -438931414
+      asset p mik_155: -733310069
+      asset p mik_156: -1736434115
+      asset p mik_157: 563515215
+      asset p mik_158: -1373620746
+      asset p mik_159: -188234043
+      asset p mik_16: -1551353313
+      asset p mik_160: 1165734321
+      asset p mik_161: 460861491
+      asset p mik_162: 1856543491
+      asset p mik_163: 871854800
+      asset p mik_164: 2107924310
+      asset p mik_165: -1175663453
+      asset p mik_166: 2075816549
+      asset p mik_167: -351017337
+      asset p mik_168: -488421970
+      asset p mik_169: 1071464271
+      asset p mik_17: -505251370
+      asset p mik_170: 1491528581
+      asset p mik_171: -988303986
+      asset p mik_172: -478799190
+      asset p mik_173: -961475319
+      asset p mik_174: -628021914
+      asset p mik_175: -2090047629
+      asset p mik_176: 2002027229
+      asset p mik_177: -1070630538
+      asset p mik_178: 205039677
+      asset p mik_179: -152576617
+      asset p mik_18: -1932553773
+      asset p mik_180: 2125224122
+      asset p mik_181: -780769818
+      asset p mik_182: 1576677254
+      asset p mik_183: 1850779212
+      asset p mik_184: 1433609845
+      asset p mik_185: 1743952174
+      asset p mik_186: -156546778
+      asset p mik_187: 1455480110
+      asset p mik_188: -605079938
+      asset p mik_189: 990716370
+      asset p mik_19: 911242860
+      asset p mik_190: 2078083089
+      asset p mik_191: 571909994
+      asset p mik_192: 697168041
+      asset p mik_193: -2086203928
+      asset p mik_194: 1309683974
+      asset p mik_195: 117289807
+      asset p mik_196: 513621349
+      asset p mik_197: 1731113179
+      asset p mik_198: 339871790
+      asset p mik_199: -9885141
+      asset p mik_2: -988287714
+      asset p mik_20: -2085824240
+      asset p mik_200: 1143740371
+      asset p mik_201: -1563707957
+      asset p mik_202: 1883811545
+      asset p mik_203: 880779943
+      asset p mik_204: -1122856650
+      asset p mik_205: -1670506511
+      asset p mik_206: 167822443
+      asset p mik_207: 1099016224
+      asset p mik_208: 615430629
+      asset p mik_209: -1815544493
+      asset p mik_21: -161813111
+      asset p mik_210: 2091701762
+      asset p mik_211: 685900046
+      asset p mik_212: 1854252670
+      asset p mik_213: -1182757701
+      asset p mik_214: -2082367094
+      asset p mik_215: 745245670
+      asset p mik_216: 2092100508
+      asset p mik_217: 1417665970
+      asset p mik_218: -2137290273
+      asset p mik_219: 1966936505
+      asset p mik_22: -969443707
+      asset p mik_220: 2002960262
+      asset p mik_221: -1161859067
+      asset p mik_222: -610194519
+      asset p mik_223: -1051157969
+      asset p mik_224: -1373223154
+      asset p mik_225: -1298170949
+      asset p mik_226: 329422198
+      asset p mik_227: 1033145932
+      asset p mik_228: -80082010
+      asset p mik_229: -2060368785
+      asset p mik_23: 1669564910
+      asset p mik_230: -2029556064
+      asset p mik_231: -779935333
+      asset p mik_232: -376630167
+      asset p mik_233: 1790152409
+      asset p mik_234: -1749523515
+      asset p mik_235: -658251349
+      asset p mik_236: 1084153139
+      asset p mik_237: -1883980780
+      asset p mik_238: 1645501695
+      asset p mik_239: -914529766
+      asset p mik_24: 871481086
+      asset p mik_240: -772980727
+      asset p mik_241: -1526353055
+      asset p mik_242: 21437322
+      asset p mik_243: 216613584
+      asset p mik_244: -766652262
+      asset p mik_245: -917196373
+      asset p mik_246: -708947445
+      asset p mik_247: 1822754353
+      asset p mik_248: -196225092
+      asset p mik_249: 459155224
+      asset p mik_25: -1258987324
+      asset p mik_250: -1924316020
+      asset p mik_251: 1690069542
+      asset p mik_252: 2005881409
+      asset p mik_253: 851927745
+      asset p mik_254: 976529904
+      asset p mik_255: 1637282166
+      asset p mik_256: -1764457543
+      asset p mik_257: -1907458846
+      asset p mik_258: -1070282022
+      asset p mik_259: 65092829
+      asset p mik_26: -253099129
+      asset p mik_260: -539846760
+      asset p mik_261: -1491073252
+      asset p mik_262: -1313181035
+      asset p mik_263: -1577104495
+      asset p mik_264: -1213159424
+      asset p mik_265: 1347081258
+      asset p mik_266: 1825030763
+      asset p mik_267: -698768215
+      asset p mik_268: 1773902271
+      asset p mik_269: 1517603431
+      asset p mik_27: -581255011
+      asset p mik_270: -1767053648
+      asset p mik_271: -232217822
+      asset p mik_272: 2113030762
+      asset p mik_273: -1403652760
+      asset p mik_274: 2062989346
+      asset p mik_275: -750566508
+      asset p mik_276: 1271297128
+      asset p mik_277: -1652988408
+      asset p mik_278: 1257984989
+      asset p mik_279: 1159128031
+      asset p mik_28: 1119812111
+      asset p mik_280: -1359820062
+      asset p mik_281: -541971099
+      asset p mik_282: -272016045
+      asset p mik_283: 1589564894
+      asset p mik_284: 1777621940
+      asset p mik_285: 94348357
+      asset p mik_286: 1140350258
+      asset p mik_287: -1535877758
+      asset p mik_288: 508958151
+      asset p mik_289: 678047029
+      asset p mik_29: -1891396111
+      asset p mik_290: 1191156402
+      asset p mik_291: -352868757
+      asset p mik_292: -1988708120
+      asset p mik_293: -1289720779
+      asset p mik_294: -1461364539
+      asset p mik_295: 1302992417
+      asset p mik_296: 1589760375
+      asset p mik_297: 1079984512
+      asset p mik_298: 356011857
+      asset p mik_299: 1763250332
+      asset p mik_3: 15872427
+      asset p mik_30: 2126466715
+      asset p mik_300: -891509303
+      asset p mik_301: -1112217276
+      asset p mik_302: 295938868
+      asset p mik_303: -1740521237
+      asset p mik_304: 2031461295
+      asset p mik_305: 1188094102
+      asset p mik_306: 953343918
+      asset p mik_307: 518382262
+      asset p mik_308: -1514373982
+      asset p mik_309: 832762961
+      asset p mik_31: 1544350665
+      asset p mik_310: -1482374364
+      asset p mik_311: 1111470200
+      asset p mik_312: -2011795415
+      asset p mik_313: 2107311659
+      asset p mik_314: -543422191
+      asset p mik_315: -944734221
+      asset p mik_316: -1603911674
+      asset p mik_317: 56295074
+      asset p mik_318: 1780150073
+      asset p mik_319: 1113074395
+      asset p mik_32: 944892292
+      asset p mik_320: 1441816152
+      asset p mik_321: 1716133873
+      asset p mik_322: 1580812346
+      asset p mik_323: -2030739296
+      asset p mik_324: 927114834
+      asset p mik_325: 1020486122
+      asset p mik_326: 733060891
+      asset p mik_327: -309185967
+      asset p mik_328: -1589311439
+      asset p mik_329: -21061279
+      asset p mik_33: -1698395257
+      asset p mik_330: -2104489936
+      asset p mik_331: 1235832944
+      asset p mik_332: -2110707040
+      asset p mik_333: 1440411330
+      asset p mik_334: -1566419576
+      asset p mik_335: -1461797896
+      asset p mik_336: -2062145746
+      asset p mik_337: -627056791
+      asset p mik_338: 1790558564
+      asset p mik_339: 19317248
+      asset p mik_34: 1352682526
+      asset p mik_340: -1502775269
+      asset p mik_341: -1369617046
+      asset p mik_342: -1629323072
+      asset p mik_343: -2080747747
+      asset p mik_344: -1266256850
+      asset p mik_345: -1293116638
+      asset p mik_346: -1455957797
+      asset p mik_347: 736522820
+      asset p mik_348: -795042507
+      asset p mik_349: 2017439327
+      asset p mik_35: 1019817550
+      asset p mik_350: 440673759
+      asset p mik_351: -1780468654
+      asset p mik_352: -1991725046
+      asset p mik_353: -980423932
+      asset p mik_354: -191899581
+      asset p mik_355: 2092005474
+      asset p mik_356: 356119312
+      asset p mik_357: -1562985314
+      asset p mik_358: -865691848
+      asset p mik_359: -183169644
+      asset p mik_36: -844698092
+      asset p mik_360: 785472057
+      asset p mik_361: -818140360
+      asset p mik_362: 478792474
+      asset p mik_37: -1659658684
+      asset p mik_38: -452634247
+      asset p mik_39: -1798995710
+      asset p mik_4: -794520499
+      asset p mik_40: 1157097530
+      asset p mik_41: 825086412
+      asset p mik_42: 1128216646
+      asset p mik_43: -1791481700
+      asset p mik_44: 22211579
+      asset p mik_45: -710194439
+      asset p mik_46: -1518901510
+      asset p mik_47: 275797069
+      asset p mik_48: -1559713204
+      asset p mik_49: 351349110
+      asset p mik_5: 724497358
+      asset p mik_50: 1573873133
+      asset p mik_51: 989163326
+      asset p mik_52: -869667598
+      asset p mik_53: 269750264
+      asset p mik_54: 1131388283
+      asset p mik_55: -1486311744
+      asset p mik_56: -462340772
+      asset p mik_57: -107629079
+      asset p mik_58: 1616595041
+      asset p mik_59: 1065478354
+      asset p mik_6: 1980851660
+      asset p mik_60: 232460488
+      asset p mik_61: -1230817833
+      asset p mik_62: -1254247281
+      asset p mik_63: -436658075
+      asset p mik_64: -767494881
+      asset p mik_65: -2061921971
+      asset p mik_66: 576957203
+      asset p mik_67: -308141742
+      asset p mik_68: -2077078602
+      asset p mik_69: -596743424
+      asset p mik_7: -224117569
+      asset p mik_70: 2082089462
+      asset p mik_71: -474067667
+      asset p mik_72: 585305318
+      asset p mik_73: 1559760865
+      asset p mik_74: 1990716675
+      asset p mik_75: 563227444
+      asset p mik_76: -51912262
+      asset p mik_77: 1635187480
+      asset p mik_78: -1411144330
+      asset p mik_79: 121164089
+      asset p mik_8: -1567626485
+      asset p mik_80: 827254612
+      asset p mik_81: -795442329
+      asset p mik_82: 2022104163
+      asset p mik_83: -619097582
+      asset p mik_84: 434929334
+      asset p mik_85: 1747905323
+      asset p mik_86: 14782773
+      asset p mik_87: 46098018
+      asset p mik_88: -405959363
+      asset p mik_89: 44589279
+      asset p mik_9: 263231857
+      asset p mik_90: -42164051
+      asset p mik_91: -1904904881
+      asset p mik_92: 366558941
+      asset p mik_93: -1427455503
+      asset p mik_94: -588799300
+      asset p mik_95: -1942427609
+      asset p mik_96: 29168235
+      asset p mik_97: -1561058365
+      asset p mik_98: 1563435328
+      asset p mik_99: -910010136
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
