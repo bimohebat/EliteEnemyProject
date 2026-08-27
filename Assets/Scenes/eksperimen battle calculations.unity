@@ -504,7 +504,7 @@ Transform:
   m_GameObject: {fileID: 407865293}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1751, y: 1.4718, z: 35.71}
+  m_LocalPosition: {x: 0.2, y: 1.4718, z: 35.71}
   m_LocalScale: {x: 78.521835, y: 37.98077, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -619,7 +619,7 @@ Transform:
   m_GameObject: {fileID: 1073953533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999097, z: -0, w: -0.013440736}
-  m_LocalPosition: {x: 3.2, y: 0.83, z: -0.01}
+  m_LocalPosition: {x: 3.13, y: 0.9, z: -0.01}
   m_LocalScale: {x: 1.787478, y: 2.174679, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -753,7 +753,7 @@ Transform:
   m_GameObject: {fileID: 1590561574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.96, y: 1.08, z: 0}
+  m_LocalPosition: {x: -4.2, y: 1.06, z: 0}
   m_LocalScale: {x: 1.8803, y: 1.7902, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -774,7 +774,7 @@ MonoBehaviour:
   unitName: Hero
   maxHealth: 100
   attack: 25
-  defense: 10
+  defense: 12
   speed: 15
   criticalRate: 20
   criticalDamage: 1.5
