@@ -27,6 +27,12 @@ public class BattleActorView : MonoBehaviour, IPointerClickHandler
     [Header("Referensi visual (opsional, drag manual atau auto-cari)")]
     public SpriteRenderer spriteRenderer;
 
+    [Header("Overhead UI (isi SALAH SATU sesuai isPlayerSide)")]
+    [Tooltip("Isi ini kalau unit ini MUSUH -- prefab instance dari EnemyOverheadUI (nama + HP bar mengambang).")]
+    public EnemyOverheadUI enemyOverheadUI;
+    [Tooltip("Isi ini kalau unit ini PLAYER -- prefab instance dari PlayerOverheadNameUI (nama saja, mengambang).")]
+    public PlayerOverheadNameUI playerOverheadNameUI;
+
     // Data runtime unit ini, di-assign oleh BattleManager saat battle mulai.
     [HideInInspector] public BattleUnit battleUnit;
 
@@ -43,12 +49,18 @@ public class BattleActorView : MonoBehaviour, IPointerClickHandler
 
     /// <summary>
     /// Dipanggil oleh BattleManager saat battle disiapkan, menghubungkan
-    /// GameObject visual ini dengan data BattleUnit runtime-nya.
+    /// GameObject visual ini dengan data BattleUnit runtime-nya, sekaligus
+    /// mem-bind overhead UI yang sesuai (nama+HP untuk musuh, nama saja untuk player).
     /// </summary>
     public void Initialize(BattleUnit unit, BattleManager manager)
     {
         battleUnit = unit;
         battleManager = manager;
+
+        if (isPlayerSide)
+            playerOverheadNameUI?.Bind(unit, transform);
+        else
+            enemyOverheadUI?.Bind(unit, transform);
     }
 
     /// <summary>
@@ -67,8 +79,9 @@ public class BattleActorView : MonoBehaviour, IPointerClickHandler
     }
 
     /// <summary>
-    /// Panggil ini tiap kali HP berubah supaya nanti gampang disambungkan
-    /// ke HP bar/UI (subtask HUD Battle milik Indra).
+    /// Panggil ini tiap kali HP berubah -- juga otomatis refresh HP bar
+    /// overhead musuh (kalau unit ini musuh). Player tidak punya HP bar
+    /// overhead (HP/MP player ditampilkan di PartyHUDPanel pojok kanan atas).
     /// </summary>
     public void RefreshVisual()
     {
@@ -81,5 +94,8 @@ public class BattleActorView : MonoBehaviour, IPointerClickHandler
             c.a = battleUnit.isDead ? 0.3f : 1f;
             spriteRenderer.color = c;
         }
+
+        if (!isPlayerSide)
+            enemyOverheadUI?.UpdateDisplay();
     }
 }

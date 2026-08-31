@@ -33,3 +33,13 @@ public enum AttackType
     Heavy,
     Charged
 }
+
+/// <summary>
+/// Sisi/pihak dalam battle -- dipakai sistem turn order random
+/// (lihat BattleManager.DecideNextSide).
+/// </summary>
+public enum BattleSide
+{
+    Player,
+    Enemy
+}
