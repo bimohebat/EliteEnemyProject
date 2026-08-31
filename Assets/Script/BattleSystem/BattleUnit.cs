@@ -49,4 +49,9 @@ public class BattleUnit
         currentMP -= amount;
         return true;
     }
+
+    public void RestoreMP(int amount)
+    {
+    currentMP = Mathf.Clamp(currentMP + amount, 0, baseStats.maxMP);
+    }
 }
